@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+    .container::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      background: url("./img/minecraft-bg.jpg") no-repeat center center/cover;
+    }
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .btn {
+      font-size: 1.5rem;
+      padding: 1rem 5rem;
+      display: block;
+      color: white;
+      border: 1px solid red;
+      background: rgb(163, 150, 150);
+      text-decoration: none;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <a href="../minecraft/game.html" class="btn start">Start Game</a>
+    </div>
+  </body>
+</html>
